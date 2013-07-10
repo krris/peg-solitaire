@@ -262,6 +262,9 @@ function getCapturedBall(ballBefore, ballAfter) {
                     (Math.abs(beforeY - afterY) != targetDistance))
                 return;
 
+            if (afterX != beforeX && afterY !=beforeY)
+                return
+
             var capturedBallX;
             var capturedBallY;
 
